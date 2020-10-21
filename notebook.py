@@ -45,7 +45,7 @@ def create_note(note_name):
       start_page()
     else:
         try:
-            with open(f"{notes_location}\{note_date}_{note_name}.txt","w",encoding="utf-8") as n:
+            with open(f"{notes_location}\{note_date}~{note_name}.txt","w",encoding="utf-8") as n:
                 n.write(f"{note_separator}\n{note_header}\n\n{note_txt}\n{note_separator}\n")
                 print("Notatka zapisana!")
             start_page()
